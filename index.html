@@ -1,40 +1,114 @@
-
-
 <html>
 <head>
-	<title>Web Page</title>
-	
+    <title>Web Page</title>
+    
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+  
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+    .up{
+        text-align:center;
+        background-color: tomato;
+    }
+    .dark-mode {
+  background-color: black;
+  color: white;
+}
+.button{
+    background-color:#4CAF50;
+    border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+.parag{
+    text-align: center;
+    font-size: medium;
+}
+.para{
+    text-justify: auto;
+}
+.proj{
+    text-align: center;
+}
+</style>
 <body>
-	<h1><strong><span style="color: Tomato;">PUNITH S</span></strong></h1>
-	<nav>
-	<a href="#one">One</a>
-	<a href="#two">Two</a>
-	<a href="#three">Three</a>
-	<a href="#your choice">Your choice</a>
-	</nav>
-	<section>
-  		<h2>About us</h2>
-  		
-  		
-	</section>
-	<section>
-		<h2> Achievements</h2>
-			<label for="file">Progress in this course (100%)</label>
-			<progress id="file" value="100" max="100"> 100%</progress><br>
+    <div class="up"><br><br>
+    <h1><strong><span style="color:white;">I'M PUNITH S</span></strong></h1>
+    <h3 style="color:white;">STUDENT</h3>
+    <button class="button" onclick="myFunction()">Toggle dark mode</button>
 
-			<label for="file1">Progress in the Specialization capstone (20%)</label>
-			<progress id="file1" value="20" max="100"> 20% </progress><br>
+    
+    <br><br></div>
+    
+    <div class="parag">
+        <h2>About Me</h2>
+        
+          <p class="para"><strong>I am Punith, Student At AIET I am pursuing a Computer Science and<br> Engineering in Bachelor of Engineering.Coding, web development<br> and cyber security are some of my interest.</strong></p>
+          <p class="para"><strong>I enjoy creating software and seeking solutions that have a positive <br>effect on other people's lives.I enjoy attending hackathons and meeting<br> new people.</strong></p>
+        
+    </div>
+    <section>
+        <h2> Technical Language</h2>
+            <label for="file">C/C++</label>
+            <progress id="file" value="80" max="100"> 80%</progress><br>
 
-			<label for="file2">and Progress in life goals (67%)  </label>
-			<progress id="file2" value="67" max="100"> 67% </progress>
-	</section>
+            <label for="file1">Java</label>
+            <progress id="file1" value="80" max="100"> 80% </progress><br>
 
-		<section><h2>Project</h2>
- 			
-		<footer>
-			<p>This page was created by punith and Colleen van Lent. To learn more about web design, visit <a href=" http://www.intro-webdesign.com">Intro to Web Design</a></p>
-			
-		</footer>
+            <label for="file2">Python  </label>
+            <progress id="file2" value="80" max="100"> 80% </progress><br>
+
+            <label for="file2">HTML & CSS  </label>
+            <progress id="file2" value="80" max="100"> 80% </progress>
+    </section> 
+
+        <section class="proj"><h2><strong>Project</strong></h2>
+         
+        <h3>Bus Booking System</h3>
+        <img src="bus.jpg" alt="bus " width="100%" height="400" style="border:5px solid black">
+            <p>During tough case scenario's,it is difficult to select convenient ride, We have created onlne platform to ease user's ride and booking instantly. </p>
+        <h3>Automate identification and recognition of handwritten text from an image</h3>
+        <img src="handwritten.png" alt="handwritten" width="100%" height="400" style="border:5px solid black">
+        <p>Implement of algorithms to recognition and take input of any user written material with precision.</p>
+        <h3>Python Stuff</h3>
+        <img src="code.jpg" alt="code" width="100%" height="400" style="border:5px solid black">
+        <br><p>Collection of scripts develop in python to solve problems, analyse text files, manipulate text, CLI based<br> games and more..</p>
+        <p>Great resource to understand basic python scripting.</p>
+       <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+            <footer class="footer-area">
+                <div class="container">
+                    <div class="">
+        
+                        <div class="social text-center">
+                            <h2 class="text-uppercase">Follow Me</h2>
+                            <a href="https://www.facebook.com/pramod.pm.7106"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/puni2426"><i class="fab fa-github"></i></a>
+                            <a href="https://www.hackerrank.com/pramodpm6363?hr_r=1"><i class="fab fa-hackerrank"></i></a>
+                            <a href="https://www.linkedin.com/in/punith-s-515291199"><i class="fab fa-linkedin"></i></a>
+                           
+                        </div>
+                        <div class="copyrights text-center">
+                            <p class="para">
+                                Copyright © 2021 Punith S. All rights reserved
+        
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 </body>
 </html>
